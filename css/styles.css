@@ -1,0 +1,162 @@
+body {
+    margin: 0% auto;
+    background-color: #C5D7D1;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: center;
+    padding: 3px 10px 0px 20px;
+}
+
+.navigation {
+    width: 100%;
+    background-color:#619595;
+}
+.logo {
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+}
+nav {
+    width: 80%;
+    padding: 1%;
+    text-align: right;
+    background-color:#619595;
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heroImg {
+    height: 600px;
+    padding: 50px;
+
+}
+.content {
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+}
+footer {
+    background-color: #619595;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: center;
+    color: white
+}
+
+li {
+    padding: 20px;
+    font-family:sans-serif;
+}
+.topmenu {
+    float: right;
+    vertical-align: center;
+}
+button {
+    padding: 10px 24px;
+    border-radius: 8px;    
+    background-color: #EBCDC4;
+    border: none;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px #888888;
+}
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: white;
+    padding: 3%;
+}
+
+.container {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+}
+#mySkills {
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+#myWork-Grid {
+    display: grid;
+    grid-template-rows: max-content 1fr 1fr max-content;
+    font-family: sans-serif;
+    background-color: #EBCDC4;
+    justify-items:center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: sans-serif;
+    margin: 0% 10% 0% 10%;
+    /*padding: 10% 0% 0% 10%;*/
+    
+}
+#viewProject {
+    background-color: #EDCC8B;
+    box-shadow: 3px 3px 3px #888888;
+    align-self: flex-start;
+}
+.project-details {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0% 10% 0% 20%;
+   /*margin: 0% 20% 0% 0%;*/
+   
+}
+
+.project-image {
+    padding: 5% 5% 5% 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .skillCard {
+        width: 100%;
+    }
+    .project-card {
+        grid-template-rows: max-content 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+    ul {
+        width: 80%;
+    }
+    .content card {
+        float: center;
+
+    }
+    }
+    
