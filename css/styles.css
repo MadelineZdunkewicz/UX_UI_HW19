@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin: 0% auto;
     background-color: #C5D7D1;
@@ -28,6 +31,11 @@ ul {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    color: white;
+    
+}
+a {
+    color:white;
 }
 .heroImg {
     height: 600px;
@@ -51,7 +59,8 @@ ul {
 
 li {
     padding: 20px;
-    font-family:sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 .topmenu {
     float: right;
@@ -64,10 +73,14 @@ button {
     border: none;
     font-size: 16px;
     box-shadow: 3px 3px 3px #888888;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
 }
 p {
-    font-family: sans-serif;
+    font-family: 'Lora', serif;
     font-size: 16px;
+    font-weight:100;
 }
 
 .card {
@@ -75,11 +88,16 @@ p {
     border-radius: 5px;
     background-color: white;
     padding: 3%;
+    transition: .2s;
+}
+.card:hover {
+    transform:scale(1.1);
 }
 
 .container {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .flexContainer {
@@ -98,26 +116,30 @@ p {
 }
 #mySkills {
     background-color: white;
-    padding: 5%;
+    padding: 1% 5% 5% 1%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+
     
 }
 #myWork-Grid {
     display: grid;
     grid-template-rows: max-content 1fr 1fr max-content;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #EBCDC4;
     justify-items:center;
     align-items: center;
 }
 h1 {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position:absolute top;
+
 }
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0% 10% 0% 10%;
     /*padding: 10% 0% 0% 10%;*/
     
@@ -140,6 +162,23 @@ h1 {
     padding: 5% 5% 5% 5%;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #EDCC8B; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+  }
+  
+
 @media screen and (max-width: 600px) {
     .flexContainer {
         flex-direction: column;
@@ -159,4 +198,6 @@ h1 {
 
     }
     }
+
+
     
