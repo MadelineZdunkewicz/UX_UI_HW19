@@ -39,20 +39,24 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Back to Top
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  console.log ("Back to top clicked on");
 }
-
+//Nav Hover
 $( "a" ).hover(function() {
     $( this ).fadeOut( 100 );
     $( this ).fadeIn( 500 );
+    console.log ("Nav hover triggered");
   });
 
+  //Button Hovers
   $( "button" ).hover(function() {
     $( this ).fadeOut( 100 );
     $( this ).fadeIn( 500 );
+    console.log ("Button hover triggered");
   });
 
   
